@@ -6,16 +6,17 @@ public class Student {
 	
 	//variable fields
 	private String name, userName;
-	private int age, id;
+	private int age;
+	private static int id = 1000;
 	private Date dob;
 	
 	//Constructor Method
-	public Student(String name, int age, int id, Date dob) {
+	public Student(String name, int age, Date dob) {
 		this.name = name;
 		this.age = age;
 		this.dob = dob;
-		this.id = id;
 		setUserName();
+		id++;
 	}
 
 	public String getName() {

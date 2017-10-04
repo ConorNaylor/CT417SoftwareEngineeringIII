@@ -38,7 +38,7 @@ public class StudentTest
      */
    
 	public void testUserName() {
-		Student student = new Student("Conor", 21, 1001, date);
+		Student student = new Student("Conor", 21, date);
 		String result = student.getUserName();
 		Assert.assertEquals("Conor21", result);
 	}

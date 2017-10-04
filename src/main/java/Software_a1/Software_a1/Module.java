@@ -1,16 +1,17 @@
 package Software_a1.Software_a1;
 
-import java.util.List;
+import java.util.LinkedList;
 
 public class Module {
 	
 	private String name;
 	private int id;
-	private List<Student> list;
+	private LinkedList<Student> list;
 	
-	public Module(String name, int id) {
+	public Module(String name, LinkedList <Student> list,int id) {
 		this.name = name;
 		this.id = id;
+		this.list = list;
 	}
 	public String getName() {
 		return name;
@@ -24,7 +25,7 @@ public class Module {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public List getList() {
+	public LinkedList getList() {
 		return list;
 	}
 	

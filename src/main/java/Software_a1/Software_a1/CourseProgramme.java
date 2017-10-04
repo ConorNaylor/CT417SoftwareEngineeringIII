@@ -1,26 +1,27 @@
 package Software_a1.Software_a1;
 
-import java.util.List;
+import java.util.LinkedList;
 import org.joda.time.DateTime;
 
 public class CourseProgramme {
 
 	private String name;
-	private List <Module> list;
+	private LinkedList <Module> modList;
 	DateTime startDate, endDate = new DateTime();
 	
-	public CourseProgramme(String name, DateTime startDate) {
+	public CourseProgramme(String name, LinkedList <Module> list, DateTime startDate, DateTime endDate) {
 		this.name = name;
 		this.startDate = startDate;
 		this.endDate = endDate;
+		this.modList = list;
 	}
 	
-	public List getModules() {
-		return list;
+	public LinkedList getModules() {
+		return modList;
 	}
 	
 	public void addModule(Module module) {
-		list.add(module);
+		modList.add(module);
 	}
 
 	public String getName() {
