@@ -5,12 +5,12 @@ import java.util.LinkedList;
 public class Module {
 	
 	private String name;
-	private int id;
+	private static int id = 10000;
 	private LinkedList<Student> list;
 	
-	public Module(String name, LinkedList <Student> list,int id) {
+	public Module(String name, LinkedList <Student> list) {
 		this.name = name;
-		this.id = id;
+		id++;
 		this.list = list;
 	}
 	public String getName() {
