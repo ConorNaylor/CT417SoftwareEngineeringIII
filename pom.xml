@@ -10,6 +10,13 @@
   <name>Software_a1</name>
   <url>http://maven.apache.org</url>
 
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+	
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -26,5 +33,10 @@
  		 <artifactId>joda-time</artifactId>
  		 <version>2.9.9</version>
  	 </dependency>
+ 	 <dependency>
+	    <groupId>com.github.ConorNaylor</groupId>
+	    <artifactId>CT417SoftwareEngineeringIII</artifactId>
+	    <version>-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 </project>
