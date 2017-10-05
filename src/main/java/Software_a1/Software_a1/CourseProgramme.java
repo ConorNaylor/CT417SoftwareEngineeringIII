@@ -16,7 +16,7 @@ public class CourseProgramme {
 		this.modList = list;
 	}
 	
-	public LinkedList getModules() {
+	public LinkedList<Module> getModules() {
 		return modList;
 	}
 	

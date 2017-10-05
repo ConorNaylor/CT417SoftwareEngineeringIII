@@ -5,13 +5,13 @@ import java.util.LinkedList;
 public class Module {
 	
 	private String name;
-	private static int id = 10000;
-	private LinkedList<Student> list;
+	private String id;
+	private LinkedList<Student> Students;
 	
-	public Module(String name, LinkedList <Student> list) {
+	public Module(String name, LinkedList <Student> list, String id) {
 		this.name = name;
-		id++;
-		this.list = list;
+		this.id = id;
+		this.Students = list;
 	}
 	public String getName() {
 		return name;
@@ -19,18 +19,18 @@ public class Module {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getId() {
-		return id;
+	public String getId() {
+		return this.id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-	public LinkedList getList() {
-		return list;
+	public LinkedList<Student> getList() {
+		return Students;
 	}
 	
 	public void addStudent(Student student) {
-		list.add(student);
+		Students.add(student);
 	}
 
 }
